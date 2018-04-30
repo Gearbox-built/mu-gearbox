@@ -11,7 +11,7 @@
 $directories = glob(dirname(__FILE__) . '/*' , GLOB_ONLYDIR);
 
 foreach($directories as $directory) {
-    if(file_exists($directory . DIRECTORY_SEPARATOR . basename($directory) . ".php")) {
-        require($directory . DIRECTORY_SEPARATOR . basename($directory) . ".php");
+    if(file_exists($directory . '/' . basename($directory) . ".php")) {
+        require($directory . '/' . basename($directory) . ".php");
     }
 }
